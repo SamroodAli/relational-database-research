@@ -5,7 +5,7 @@
 DELETE FROM table_name
 WHERE condition
 
-RETURNING * -- or RETURNING field_one, field_two -- returns selected fields after the operation. Star ( * ) returns every field
+RETURNING *; -- or RETURNING field_one, field_two -- returns selected fields after the operation. Star ( * ) returns every field
 
 
 -- Example

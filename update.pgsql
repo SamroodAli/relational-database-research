@@ -6,7 +6,7 @@ UPDATE table_name
   SET field_one = 'value1',
       field_two = 'value_2'
   -- optionally a filter condition on what all record(s) to update 
-  WHERE condition -- not including a where condition will update all the records
+  WHERE condition; -- not including a where condition will update all the records
 
 -- Example
 
