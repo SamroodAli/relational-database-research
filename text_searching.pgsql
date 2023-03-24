@@ -40,5 +40,9 @@ SELECT * FROM table_name
 
 SELECT * FROM ingredients
   WHERE CONCAT(title, fruit) ILIKE '%fruit%' -- this will return all the records where  "title" + "fruit" (conctenated fields) has the word fruit in it
-
 -- This is literally concatenation so "orange" + "fruit" will be a match for the string "gefru"
+
+
+SELECT * FROM ingredients
+  title ILIKE 'b_rry' -- just like % matches one ore more characters, _ matches exactly one character
+  -- hence, this would match berry, birry, barry etc
