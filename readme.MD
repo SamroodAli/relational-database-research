@@ -28,4 +28,8 @@ There are two template databases created by default called template0 and templat
 
 ## Naming convention - use of double quotes
 
+- underscores are allowed.
+- Without quotes, it is case insensitive
+- With double quotes - Case sensitive, can use periods and colons etc but use this sparingly as we need quotes when querying
+
 [Prisma article on this](https://www.prisma.io/dataguide/postgresql/short-guides/quoting-rules)
