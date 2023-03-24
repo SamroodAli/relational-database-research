@@ -26,10 +26,11 @@ There are two template databases created by default called template0 and templat
 
 - So Template0 is for us to reset our templates.
 
-## Naming convention - use of double quotes
+## Naming convention - use of quotes
 
-- underscores are allowed.
-- Without quotes, it is case insensitive
+- values are single quotes
+- other identifiers such as table, database,columns are either no quotes or double quotes
+- Without quotes, identifiers are case insensitive. Underscores are allowed but many characters such as columns and periods are not allowed
 - With double quotes - Case sensitive, can use periods and colons etc but use this sparingly as we need quotes when querying
 
 [Prisma article on this](https://www.prisma.io/dataguide/postgresql/short-guides/quoting-rules)

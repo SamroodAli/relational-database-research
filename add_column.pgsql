@@ -20,5 +20,5 @@ ALTER TABLE ingredients ADD COLUMN image VARCHAR ( 255 );
 
 ALTER TABLE ingredients
   ADD COLUMN image VARCHAR ( 255 ),
-  ADD COLUMN type VARCHAR ( 50 ) NOT NULL DEFAULT 'vegetable';
+  ADD COLUMN type VARCHAR ( 50 ) NOT NULL DEFAULT 'vegetable'; -- values must be single quotes
    
