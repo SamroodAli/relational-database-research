@@ -1,4 +1,8 @@
-# Relational Databases research including SQL
+## Course notes From Frontendmasters
+
+[Brian holt's complete intro to sql course notes](https://sql.holt.courses/)
+
+## Relational Databases research including SQL
 
 | command          | Particular                                        |
 | ---------------- | ------------------------------------------------- |
