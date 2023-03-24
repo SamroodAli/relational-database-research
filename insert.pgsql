@@ -12,6 +12,10 @@ INSERT INTO table_name (
   10 -- numbers need no quotes
 )
 
+-- an insert operation will return or log something like 'INSERT 0 1' 
+  -- first number is something technical (look up postgresql object identifier)
+  -- second number is the number of insertions
+
 -- Example
 
 INSERT INTO ingredients (
@@ -19,10 +23,6 @@ INSERT INTO ingredients (
 ) VALUES (
   'tomoato','tomato.jpg','vegetable'
 )
-
--- an insert operation will return or log something like 'INSERT 0 1' 
-  -- where the first number is the number of updates
-  -- second number is the number of insertions
 
 
 --  Inserting multiple records
@@ -70,3 +70,5 @@ INSERT INTO ingredients (
   ( 'tomato', 'tomato.jpg', 'vegetable' ),
   ( 'watermelon', 'watermelon.jpg', 'fruit' )
 ON CONFLICT DO NOTHING; -- This is optional if any row has a conflict like a unique constraint fail, skip it ( do nothing )
+
+-- check out upsert if you want update or insert
