@@ -15,18 +15,11 @@ INSERT INTO table_name (
 -- the part where we do update if there is  conflict
 -- continuing
   DO UPDATE -- telling we are doing an update, we can also DO NOTHING;
-  SET field = 'value'; -- update, the value to the given value. 
---but often we want it to the update with the new data we passed. Read that below (excluded keyword)
-
--- an insert operation will return or log something like 'INSERT 0 1' 
-  -- first number is something technical (look up postgresql object identifier)
-  -- second number is the number of insertions or upserts
-
+  SET field = 'value' -- update, the value to the given value. 
 -- USING excluded.data to update with the data we passed instead of literal values
-
--- We can do this using the keyword 'excluded'--
+  field_two = excluded.field_two;
 -- excluded is the record that got excluded (skipped) coz data was already present.
--- in other words, it is the new data
+-- in other words, it is the new data we are passing
 
 INSERT INTO table_name (
   -- fields in any order
@@ -37,7 +30,8 @@ INSERT INTO table_name (
   10
 ) ON CONFLICT (conflicting_field) 
   DO UPDATE 
-  SET field = excluded.field;
+  SET field_one = excluded.field_one
+  SET field_two = excluded.field_two;
 
 
 -- Example
@@ -50,7 +44,6 @@ INSERT INTO ingredients (
   DO UPDATE
   SET image = excluded.image; -- excluded.literal or any literal value
 
-
 -- Upserting multiple records
 
 INSERT INTO table_name (
@@ -61,8 +54,7 @@ INSERT INTO table_name (
 ( 'another_value_for_field_1', 20 ), -- another record
 ON CONFLICT (field_1) -- assuming field_1 was unique
 DO UPDATE
-SET image = excluded.image -- excluded.image or any literal value;
-
+SET image = excluded.image; -- excluded.image or any literal value;
 
 -- Upserting multiple values
 
