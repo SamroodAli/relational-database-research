@@ -12,6 +12,10 @@ SELECT CONCAT('hi',' something') -- returns hi + something
 SELECT function_one(function_two(field_1, field_2)), function_three(field_3) FROM table_name; -- just an example
 -- we can combine functions anyway we can -- just like in javascript
 
+-- example
+
+SELECT LOWER(CONCAT(title,' ',type)), NOW() FROM ingredients;
+
 -- other examples
 
 SELECT * FROM ingredients
