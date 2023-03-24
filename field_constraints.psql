@@ -8,6 +8,14 @@ CREATE TABLE table_name (
   -- FIELD constraints
   PRIMARY KEY -- Primary key of the table  - The field is also unique
   GENERATED ALWAYS AS IDENTITY -- auto increment number for each record starting from 1 all the way to 2147483647 which is approximately 2.1B records
+
+  SERIAL -- 
+      -- serial is the "old" implementation of auto-generated unique values that has been part of Postgres for ages. However that is not part of the SQL standard. postgresql-serial-vs-identity
+
+      -- The underlying implementation is still based on a sequence, the definition now complies with the SQL standard. One thing that this new syntax allows is to prevent an accidental override of the value.
+
+           -- From stack overflow : https://stackoverflow.com/questions/55300370/
+
   UNIQUE -- unique values only in the field
   NULL -- values can be null. This is the default constraint and need not be specified
   NOT NULL -- values cannot be null, need to be set explicitly.
