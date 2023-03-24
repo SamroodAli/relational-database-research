@@ -1,0 +1,14 @@
+-- Field constraints
+
+
+CREATE TABLE table_name (
+  field_name -- Field name such as id, title etc -- an identifier and not a field constraint
+  data_type -- what data type this field is, this is a field constraint should have a dedicated section as there are many data types
+
+  -- FIELD constraints
+  PRIMARY KEY -- Primary key of the table  - The field is also unique
+  GENERATED ALWAYS AS IDENTITY -- auto increment number for each record starting from 1 all the way to 2147483647 which is approximately 2.1B records
+  UNIQUE -- unique values only in the field
+  NULL -- values can be null. This is the default constraint and need not be specified
+  NOT NULL -- values cannot be null, need to be set explicitly.
+)
