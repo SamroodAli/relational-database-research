@@ -2,6 +2,19 @@
 
 [Brian holt's complete intro to sql course notes](https://sql.holt.courses/)
 
+## Order of execution in a Select Query
+
+- FROM and JOINS
+- WHERE
+- GROUP BY
+- HAVING
+- SELECTING
+- DISTINCT
+- ORDER BY
+- LIMIT / OFFSET
+
+[Source: sqlbolt](https://sqlbolt.com/lesson/select_queries_order_of_execution)
+
 ## Relational Databases research including SQL
 
 | command          | Particular                                        |
