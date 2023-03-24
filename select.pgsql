@@ -15,5 +15,3 @@ SELECT field_one, field_two FROM table_name;
 -- example
 
 SELECT title, image FROM ingredients;
-
-
