@@ -60,3 +60,18 @@ There are two template databases created by default called template0 and templat
 | ---------- | ---------------------------------------------------------- |
 | VARCHAR    | variable length character ( Text)                          |
 | INTEGER    | Number without a decimal (-2,147,483,647 to 2,147,483,647) |
+
+## Math operations
+
+- Preview this markdown and visit this table
+
+| Operation           | What it does   |
+| ------------------- | -------------- |
+| +                   | Add            |
+| -                   | Subtract       |
+| \* (Check preview)  | Multiply       |
+| /                   | Divide         |
+| ^                   | Exponent       |
+| \|/ (Check preview) | Square root    |
+| @                   | Absolute value |
+| %                   | Remainder      |
