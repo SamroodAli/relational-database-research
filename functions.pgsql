@@ -26,3 +26,29 @@ SELECT * FROM ingredients
 
 SELECT * FROM ingredients 
   WHERE LOWER(title) LIKE '%pot%' -- search for pot - all titles are lowercased and then searched
+
+-- concat using ||
+
+SELECT field_one || field_two FROM table_name; -- concats field_one and field_two;
+
+SELECT name || ', ' ||  population AS location FROM cities; -- returns 'name, population';
+
+-- concatenating with CONCAT
+-- CONCAT takes in any number of arguments 
+
+SELECT CONCAT(field_one, field_two,field_three) FROM table_name;
+
+-- example
+
+SELECT CONCAT(name,population,area) FROM cities;
+
+-- get length using LENGTH()
+-- gets length of the string
+
+SELECT LENGTH(field_one) FROM table_name;
+
+-- example
+
+SELECT title, LENGTH(title) FROM ingredients; -- returns title and length of the title for each row
+
+
