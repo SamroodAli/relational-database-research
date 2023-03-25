@@ -53,3 +53,10 @@ There are two template databases created by default called template0 and templat
 1. What kind of thing are we storing - table
 2. What properties does this thing has - fields
 3. What type of data each of those properties contain - data types
+
+## Data types
+
+| Data types | Particular                                                 |
+| ---------- | ---------------------------------------------------------- |
+| VARCHAR    | variable length character ( Text)                          |
+| INTEGER    | Number without a decimal (-2,147,483,647 to 2,147,483,647) |
