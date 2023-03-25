@@ -47,3 +47,9 @@ There are two template databases created by default called template0 and templat
 - With double quotes - Case sensitive, can use periods and colons etc but use this sparingly as we need quotes when querying
 
 [Prisma article on this](https://www.prisma.io/dataguide/postgresql/short-guides/quoting-rules)
+
+## Database Design process
+
+1. What kind of thing are we storing - table
+2. What properties does this thing has - fields
+3. What type of data each of those properties contain - data types
