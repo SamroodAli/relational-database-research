@@ -8,7 +8,6 @@
 -- Inner Join
 -- returns related records only
 
-
 -- See the set relations for joins here 👇
 -- https://www.w3schools.com/sql/sql_join.asp
 
@@ -19,7 +18,7 @@ SELECT fields FROM
     table_B table_B_alias 
   ON [condition]
 
--- INNER keyword can be left out as this is the default join
+-- inner keyword can be left out as this is the default join
 
 -- example
 
@@ -31,14 +30,14 @@ SELECT title, body FROM
     photo.recipe_id = recipe.id;
 
 
--- OUTER LEFT syntax
-SELECT fields FROM 
-    table_A table_A_alias 
+-- outer left syntax
+SELECT fields FROM
+    table_a table_a_alias 
   OUTER LEFT JOIN
-    table_B table_B_alias 
+    table_b table_b_alias 
   ON [condition]
 
--- OUTER keyword can be left out as left join is always an outer join.
+-- outer keyword can be left out as left join is always an outer join.
 
 -- example
 
@@ -50,14 +49,14 @@ SELECT title, body FROM
     photo.recipe_id = recipe.id;
 
 
--- OUTER RIGHT syntax
-SELECT fields FROM 
-    table_A table_A_alias 
+-- outer right syntax
+SELECT fields FROM
+    table_a table_a_alias 
   OUTER RIGHT JOIN
-    table_B table_B_alias 
+    table_b table_b_alias 
   ON [condition]
 
--- OUTER keyword can be left out as left join is always an outer join.
+-- outer keyword can be left out as right join is always an outer join.
 
 -- example
 
@@ -68,4 +67,20 @@ SELECT title, body FROM
   ON
     photo.recipe_id = recipe.id;
 
--- OUTER keyword can be left out as right join is always an outer join.
+-- outer full join syntax
+SELECT fields FROM
+    table_a table_a_alias 
+  OUTER FULL JOIN
+    table_b table_b_alias 
+  ON [condition]
+
+-- outer keyword can be left out as left join is always an outer join.
+
+-- example
+
+SELECT title, body FROM
+    recipes recipe
+  FULL JOIN
+    recipes_photos photo
+  ON
+    photo.recipe_id = recipe.id;
