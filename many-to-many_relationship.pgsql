@@ -22,3 +22,20 @@ CREATE TABLE recipe_ingredient (
     ingredient_id INT REFERENCES ingredients (id) ON DELETE NO ACTION,
     CONSTRAINT recipe_ingredient_pk PRIMARY KEY (recipe_id, ingredient_id)
 );
+
+
+-- querying many to many example
+
+SELECT 
+    i.title as ingredient_title,
+    r.title as recipe_title
+FROM
+    recipe_ingredients ri
+INNER JOIN
+    ingredients i
+ON
+    i.id = ri.ingredient_id
+INNER JOIN
+    recipes r
+ON
+    r.id = ri.recipe_id;
