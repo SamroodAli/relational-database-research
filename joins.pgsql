@@ -1,9 +1,13 @@
--- There are two kinds of joins
+-- There are different kinds of joins
 -- Inner and outer
 -- ANd outer is further split into 
   -- Left outer join or left join
   -- Right outer join or right join
   -- Full outer join or full join
+
+-- Besides these, there's also natural joins and cross join
+-- Natural join joins on common columns (Not recommended as this is ambigous)
+-- Cross join that gives you every permutation (every row with every other row in the table)( Not recommended as this is expensive)
 
 -- Inner Join
 -- returns related records only
@@ -84,3 +88,34 @@ SELECT title, body FROM
     recipes_photos photo
   ON
     photo.recipe_id = recipe.id;
+
+-- Natural join example
+
+SELECT fields FROM 
+    table_a table_a_alias
+  NATURAL JOIN
+    table_b table_b_alias
+
+-- Natural join example
+
+SELECT title, body FROM 
+    recipes
+  NATURAL JOIN
+    recipes_photos
+
+-- If there is no common columns, it becomes a cross join.
+    
+-- Cross join
+
+SELECT fields FROM 
+    table_a table_a_alias
+  CROSS JOIN
+    table_b table_b_alias
+
+-- Cross join example
+
+SELECT * FROM
+  ingredients
+    CROSS JOIN
+  recipes;
+  
