@@ -51,4 +51,11 @@ SELECT LENGTH(field_one) FROM table_name;
 
 SELECT title, LENGTH(title) FROM ingredients; -- returns title and length of the title for each row
 
+-- COALESCE function is like the nullish coalescing function in javascript ( value ?? 'default')
 
+SELECT COALESCE(field,'default_value') FROM table_name; -- if a record has null for the field, it will return the given default value;
+
+-- example
+
+SELECT title, COALESCE(image,'default-image.jpg') FROM ingredients; 
+-- if an ingredient doesn't have an image, we will return the default image
