@@ -9,7 +9,7 @@
 -- returns related records only
 
 -- See the set relations for joins here 👇
--- https://www.w3schools.com/sql/sql_join.asp
+-- https://commons.wikimedia.org/wiki/File:SQL_Joins.svg
 
 -- INNER JOIN syntax
 SELECT fields FROM 
