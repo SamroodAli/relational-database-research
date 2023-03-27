@@ -12,4 +12,27 @@ SELECT AGGREGRATION_FUNCTION(field_one) FROM table_name GROUP BY field_one, fiel
 
 -- Examples
 
+-- Get the number of ingredients of a type
+
 SELECT type, COUNT(type) FROM ingredients GROUP BY type;
+
+-- Get the number of ingredients of a type if the count > 10
+
+SELECT type, COUNT(type) FROM ingredients GROUP BY type HAVING COUNT(type) > 10;
+
+-- Get the recipes with the number of ingredients being between 4 and 6
+
+SELECT
+  r.title
+FROM
+  recipe_ingredients ri
+
+INNER JOIN
+  recipes r
+ON
+  r.recipe_id = ri.recipe_id
+
+GROUP BY
+  r.title
+HAVING
+  COUNT(r.title) BETWEEN 4 AND 6;
