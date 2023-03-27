@@ -45,3 +45,6 @@ SET
   meta='{ "tags": ["dessert", "fruit"] }'
 WHERE
   recipe_id=47;
+
+
+-- check out JSONB querying file for info on querying JSON
