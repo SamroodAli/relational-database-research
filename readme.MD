@@ -56,10 +56,12 @@ There are two template databases created by default called template0 and templat
 
 ## Data types
 
-| Data types | Particular                                                 |
-| ---------- | ---------------------------------------------------------- |
-| VARCHAR    | variable length character ( Text)                          |
-| INTEGER    | Number without a decimal (-2,147,483,647 to 2,147,483,647) |
+| Data types | Particular                                                               |
+| ---------- | ------------------------------------------------------------------------ |
+| VARCHAR    | variable length character ( Text)                                        |
+| INTEGER    | Number without a decimal (-2,147,483,647 to 2,147,483,647)               |
+| JSON       | JSON as plain text                                                       |
+| JSONB      | Better JSON. This is JSON which is processed instead of being plain text |
 
 ## Math operations
 
