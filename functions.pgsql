@@ -6,6 +6,28 @@
 -- If we don't need them to return something, we can use procedures
 -- We call them using SELECT 
 
+-- a function that returns a trigger
+CREATE OR REPLACE FUNCTION function_name (arg1 DATATYPE, arg2 DATATYPE )-- can declare any number of arguments
+  RETURNS 
+  -- whatever the function returns 
+  LANGUAGE
+    -- any language
+AS
+
+$$
+BEGIN
+  -- function logic
+  -- can use variables like the function arguments
+END
+$$
+
+-- Invoking the function
+SELECT function_name()
+
+-- removing a function
+
+DROP FUNCTION [IF EXISTS] function_name;
+
 -- Let's take a look at a query
 
 -- Get the recipes with the number of ingredients being between 4 and 6

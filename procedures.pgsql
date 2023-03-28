@@ -1,5 +1,6 @@
 -- References
 -- https://sql.holt.courses/lessons/functions-triggers-and-procedures/functions
+-- https://sql.holt.courses/lessons/functions-triggers-and-procedures/triggers
 
 -- Procedures are like functions that do not return anything
 -- they are meant to do actions
@@ -14,7 +15,13 @@ $$
 -- some action
 $$;
 
+-- invoke a procedure
+
 CALL procedure_name();
+
+-- drop a procedure
+
+DROP PROCEDURE [IF EXISTS] procedure_name;
 
 -- example
 
