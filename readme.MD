@@ -22,6 +22,7 @@
 | \?               | List all the backslash commands                   |
 | \l               | List all the databases present                    |
 | \d               | List all the database tables                      |
+| \df              | List all the database functions                   |
 | \d table_name    | Describe one table ( list it's fields)            |
 | \! shell command | we can run normal shell commands by prepending \! |
 
