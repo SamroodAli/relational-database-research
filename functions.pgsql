@@ -1,3 +1,6 @@
+-- References
+-- https://sql.holt.courses/lessons/functions-triggers-and-procedures/functions
+
 -- Functions are like functions in programming languages
 -- They return something
 -- If we don't need them to return something, we can use procedures

@@ -1,3 +1,6 @@
+-- References
+-- https://sql.holt.courses/lessons/functions-triggers-and-procedures/functions
+
 -- Procedures are like functions that do not return anything
 -- they are meant to do actions
 -- we invoke them with "CALL"
