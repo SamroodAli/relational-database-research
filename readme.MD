@@ -79,3 +79,10 @@ There are two template databases created by default called template0 and templat
 | \|/ (Check preview) | Square root    |
 | @                   | Absolute value |
 | %                   | Remainder      |
+
+## Attribution
+
+Some of the code snippets and syntax examples are from
+
+- [Brian holt's sql course](https://sql.holt.courses/)
+- [Tutorialpoint](https://www.tutorialspoint.com/postgresql)
