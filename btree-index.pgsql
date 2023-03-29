@@ -25,3 +25,5 @@ DROP INDEX index_name;
 -- you can use \d table_name to describe a table including it's indexes
 
 -- for index for text searches and JSONB, consider a GIN index (check out notes on GIN index)
+
+-- we can also partial index, check out the notes on partial index

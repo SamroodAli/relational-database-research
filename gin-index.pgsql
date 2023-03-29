@@ -41,3 +41,5 @@ CREATE INDEX samrood ON movies USING gin(name GIN_TRGM_OPS);
 SELECT name FROM movies WHERE name like '%star wars%';
 
 -- creating GIN index is very expensive and might cause down time in production
+
+-- we can also partial index, check out the notes on partial index
