@@ -4,12 +4,10 @@
 -- When creating a table 
 -- Making something unique will create an index on it
 
-
 CREATE TABLE table_name(
   -- other fields
     some_field INT UNIQUE NOT NULL, -- this is now a unique field - also an indexed field
   -- other fields
-
 
   UNIQUE (field_one, field_two)     -- this will also create a unique index on one or more fields
 )
