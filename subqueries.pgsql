@@ -54,4 +54,4 @@ FROM
 WHERE 
   name ILIKE '%star wars%';
 
--- array in postgresql shows up in curly braces - {'Mystery', 'Prophecy','Action','Adventures','Anime'}
+-- array in postgresql shows up in curly braces - {Mystery, Prophecy,Action,Adventures,Anime, "Space adventures"} -- double quotes when there are spaces and other such characters.
