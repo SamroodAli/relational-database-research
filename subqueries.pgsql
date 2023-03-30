@@ -47,7 +47,7 @@ SELECT
         mk.category_id = ecn.category_id -- connect movie and category
       WHERE
         m.id = mk.movie_id -- notice how the table alias 'm' is not defined in the sub query but accessed from the query outside
-      LIMIT 5
+      LIMIT 5 -- limiting the number of items in the array
   ) AS keywords -- list all the categories for a movie as keywords
 FROM 
   movies m
