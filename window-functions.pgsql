@@ -14,11 +14,11 @@ SELECT [DISTINCT]
   other_fields, AGGREGATE_FUNCTION(aggregating_fields) 
 OVER () as aggregated_field_name  -- here OVER () means all the rows from the entire table
 FROM table_name
-LIMIT BY some_number; -- limit and offset doesn't affect window functions
+LIMIT some_number; -- limit and offset doesn't affect window functions
 
 -- example
 
-SELECT name, score, AVG(score) OVER () as average_student_score FROM students LIMIT BY 10;
+SELECT name, score, AVG(score) OVER () as average_student_score FROM students LIMIT 10;
 
 -- example from https://sql.holt.courses/lessons/window-functions/window-functions
 -- compare movie ratings against the average movie ratings
@@ -40,12 +40,12 @@ SELECT [DISTINCT]
   other_fields, AGGREGATE_FUNCTION(aggregating_fields)
 OVER (PARTITION BY partitioning_field) as aggregated_field_name
 FROM table_name
-LIMIT BY some_number;
+LIMIT some_number;
 
 -- example
 
 -- compare student scores of the entire school against their batch average score
-SELECT name, score, batch, AVG(score) OVER (PARTITION BY batch) as average_batch_student_score FROM students LIMIT BY 10;
+SELECT name, score, batch, AVG(score) OVER (PARTITION BY batch) as average_batch_student_score FROM students LIMIT 10;
 
 -- example from 
 
