@@ -5,5 +5,5 @@
 # limited to 63 bytes in length
 createdb database_name
 
-# we can also invoke just createdb and enter a db name when prompted
-createdb
+# not giving an argument would default to creating a db with the user's name
+createdb # is the same as calling createdb $(whoami)
