@@ -8,7 +8,6 @@
 - WHERE
 - GROUP BY
 - HAVING
-- SELECTING
 - DISTINCT
 - ORDER BY
 - LIMIT / OFFSET
@@ -20,6 +19,7 @@
 | command          | Particular                                                      |
 | ---------------- | --------------------------------------------------------------- |
 | \?               | List all the backslash commands                                 |
+| \h               | Show help on any syntax/keyword: Example(\h SELECT)             |
 | \l               | List all the databases present                                  |
 | \d               | List all the database tables                                    |
 | \df              | List all the database functions                                 |
