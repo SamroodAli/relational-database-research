@@ -16,6 +16,10 @@ CREATE VIEW english_category_names AS  SELECT * FROM category_names WHERE langag
 
 -- views show up when we describe a table with '\d table_name' command.
 
+-- we can also query for the definition of a view (get the defintion of a view)
+
+SELECT pg_get_viewdef('view_name', true);
+
 -- we can query a view using SELECT 
 
 SELECT * FROM view_name; -- works with SELECT just like a table_name;
