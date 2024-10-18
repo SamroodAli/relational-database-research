@@ -1,4 +1,4 @@
-## Course notes From Frontendmasters
+## Course notes
 
 [Brian holt's complete intro to sql course notes](https://sql.holt.courses/)
 
