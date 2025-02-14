@@ -1,3 +1,3 @@
 -- copy database and create a new one
 
-CREATE NEW_DATABASE WITH COPYING_DATABASE OWNER user_name;
+CREATE DATABASE new_database WITH TEMPLATE copying_database OWNER user_name;
